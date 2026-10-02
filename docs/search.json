@@ -28,6 +28,13 @@
     "text": "Graphical summaries\n\nHistograms\nIf we want to make the histogram from the morley data that we saw in lecture, then we can use the ggplot and geom_boxplot functions from the tidyverse suite of packages:\n\n\n\n\n\n\n\n\nThe ggplot2 package uses a grammar for graphics. The first function ggplot() takes two arguments: the data to be plotted (morley) and the aesthetics for the plot. In this case, we are choosing to put Speed on the x-axis. Switching to the y-axis is easy:\n\n\n\n\n\n\n\n\nThe second function, geom_histogram tells R which plot to make; in this case, it is a histogram. We then give few additional arguments which allow us to customize how the histogram looks.\n\n\n\n\n\n\n\n\nRecall that changing the width of the histogram bins can have a large effect on how we interpret the histogram. The easiest way to do this using geom_histogram is by using the bins= argument. For example, we can enter:\n\n\n\n\n\n\n\n\nor\n\n\n\n\n\n\n\n\nYou can keep changing the number of bins and see how your view of the plot changes.\n\n\nBoxplots\nWe also learned how to use boxplots to summarize quantitative data. We can do that by using the boxplot function\nIf we want to make the whiskers easier to see, we can add the following:\n\n\n\n\n\n\n\n\nTo see the boxplots for individual experiments, we can add two pieces of information: first, indicating that the experiments are grouped; second, we indicate that we want to include the experiment number on the x-axis."
   },
   {
+    "objectID": "topics/02-working-with-data-in-R.html#numerical-summaries",
+    "href": "topics/02-working-with-data-in-R.html#numerical-summaries",
+    "title": "Topic 2: Working with Data in R",
+    "section": "Numerical summaries",
+    "text": "Numerical summaries\nOf course, we may also want to compute numerical summaries. Again, by using the tidyverse library, we can generate summaries that we want:\nFor example, in order to compute the mean, we can use the following code:\n\n\n\n\n\n\n\n\nSimilarly for the medidan, we can use:\n\n\n\n\n\n\n\n\nWe don’t need to compute only a single value at a time:\n\n\n\n\n\n\n\n\nWe can also compute Empirical Rule and Chebyshev intervals:"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",

@@ -102,7 +102,8 @@ using the `boxplot` function
 If we want to make the whiskers easier to see, we can add the following: 
 
 ```{webr}
-ggplot(morley, aes(y=Speed)) + stat_boxplot(geom = 'errorbar',width=0.25)+
+ggplot(morley, aes(y=Speed)) + 
+  stat_boxplot(geom = 'errorbar',width=0.25)+
   geom_boxplot()
 ```
 
@@ -116,3 +117,34 @@ ggplot(morley, aes(y=Speed,x=Expt,group=Expt))  +
 ```
 
 
+## Numerical summaries
+
+Of course, we may also want to compute numerical summaries. Again, by using 
+the `tidyverse` library, we can generate summaries that we want: 
+
+For example, in order to compute the mean, we can use the following code: 
+
+```{webr}
+summarize(morley, xbar=mean(Speed))
+```
+
+Similarly for the medidan, we can use: 
+
+
+```{webr}
+summarize(morley, median=median(Speed))
+```
+
+We don't need to compute only a single value at a time: 
+
+```{webr}
+summarize(morley,xbar=mean(Speed), median=median(Speed), stdev=sd(Speed), IQR=IQR(Speed))
+```
+
+We can also compute Empirical Rule and Chebyshev intervals: 
+
+```{webr}
+summarize(morley,xbar=mean(Speed), stdev=sd(Speed), 
+          lower=xbar - 3*stdev, 
+          upper=xbar + 3*stdev)
+```
