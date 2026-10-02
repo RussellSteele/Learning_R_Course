@@ -1,5 +1,24 @@
 ---
-title: "Learning_R_course"
+title: "MATH 203: Learning R"
 ---
 
-This is a Quarto website created for MATH 203. Test now.
+This is a Quarto website created for McGill MATH 203 Principles of Statistics I
+for Fall 2026. It is a non-mandatory set of exercises for students who want a 
+gentle introduction to statistical computing in R without installing R on their
+local machines or using the Posit Cloud. 
+
+## Site Roadmap
+
+### 1. Getting started with R and RStudio
+
+This short lesson explains briefly the difference between R and RStudio and all 
+the ways in which they can be installed and used. You don't actually need 
+to install either to do the initial lessons, but for those who eventually want to work within RStudio, all the necessary links are there. 
+
+### 2. Working with Data in R 
+
+This interactive lesson explains how one can load datasets and create basic 
+graphical and numerical summaries using the language of R using only a web browser. 
+The lesson uses the Michelson (Morley) speed of light experimental data from 
+the Chapter 1 and 2 lecture slides. 
+
