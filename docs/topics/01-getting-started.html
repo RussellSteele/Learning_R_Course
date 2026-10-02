@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning_R_course – MATH 203: Learning R</title>
+<title>Topic 1: Getting Started – MATH 203: Learning R</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,23 +29,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-445b8638c3d06994fee0907d791121c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-ba8f7c244c1f50cbf6c6a3aa3874339a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,19 +75,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">MATH 203: Learning R</span>
     </a>
   </div>
@@ -96,11 +99,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./topics/01-getting-started.html"> 
+    <a class="nav-link active" href="../topics/01-getting-started.html" aria-current="page"> 
 <span class="menu-text">Getting Started</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./topics/02-working-with-data-in-R.html"> 
+    <a class="nav-link" href="../topics/02-working-with-data-in-R.html"> 
 <span class="menu-text">Working With Data in R</span></a>
   </li>  
 </ul>
@@ -114,15 +117,13 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Learning_R_course</h1>
+<h1 class="title">Topic 1: Getting Started</h1>
 </div>
 
 
@@ -139,11 +140,71 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a Quarto website created for MATH 203. Test now.</p>
+<section id="what-is-r" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-r">What is R?</h2>
+<p>The <a href="https://www.r-project.org">R Project for Statistical Computing</a> (or just R) is an open-source, community support software for conducting statistical analyses from graphics to simulation to data cleaning and processing and more.</p>
+</section>
+<section id="what-is-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-rstudio">What is RStudio?</h2>
+<p><a href="https://posit.co/products/open-source/rstudio">RStudio</a> is the most popular integrated development environment (IDE) for the R statistical software. Many find the user interface easier to work with as it allows for straightforward editing of files, interaction with the R console and graphical interfaces for working with directory file structures, plots and many other tools.</p>
+</section>
+<section id="how-do-i-use-these" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-use-these">How do I use these?</h2>
+<p>It is very important to follow these steps</p>
+<section id="first-install-the-r-statistical-package." class="level4">
+<h4 class="anchored" data-anchor-id="first-install-the-r-statistical-package.">First, install the R Statistical package.</h4>
+<ul>
+<li>You can dowload R from one of the Canadian repositories, like the <a href="https://mirror.csclub.uwaterloo.ca/CRAN/">repository at the University of Waterloo</a>. Make sure you download the correct software for your computing platform.</li>
+</ul>
+</section>
+<section id="second-install-rstudio." class="level4">
+<h4 class="anchored" data-anchor-id="second-install-rstudio.">Second, install RStudio.</h4>
+<ul>
+<li>Only after R is installed, then you can <a href="https://posit.co/products/open-source/rstudio">download the installation of R Studio for your computing platform.</a>. Make sure you click the button to download RStudio.</li>
+</ul>
+</section>
+</section>
+<section id="other-options" class="level2">
+<h2 class="anchored" data-anchor-id="other-options">Other options</h2>
+<p>However, if you just to fool around with R, you have some other choices.</p>
+<section id="using-posit-cloud" class="level3">
+<h3 class="anchored" data-anchor-id="using-posit-cloud">Using Posit Cloud</h3>
+<p>Posit (the company who created RStudio) allows you to run RStudio and R directly from their cloud servers for free (with certain computing and collaboration alternatives). You will need to set up an account, but you can work in RStudio without having to install anything on your home machine.</p>
+</section>
+<section id="but-if-this-is-all-too-overwhelming" class="level3">
+<h3 class="anchored" data-anchor-id="but-if-this-is-all-too-overwhelming">But if this is all too overwhelming…</h3>
+<p>I have also decided to set up some webpages where you can interact with R all in your own browser, writing and testing code without even having an account on Posit Cloud! But once you feel comfortable with R from my tutorial pages, you may want to unleash the full power of R and RStudio by installing them yourself.</p>
 
 
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
+
+</div>
+<div class="spinner-grow spinner-grow-sm">
+
+</div>
+</div>
+<script type="vfs-file">
+W10=
+</script>
+</section>
+</section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../topics";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
