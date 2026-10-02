@@ -79,7 +79,7 @@ the `bins=` argument. For example, we can enter:
 
 
 ```{webr}
-ggplot(morley, aes(y=Speed)) + 
+ggplot(morley, aes(x=Speed)) + 
   geom_histogram(col="black", fill="lightblue", bins=10)
 ```
 
@@ -87,7 +87,7 @@ or
 
 
 ```{webr}
-ggplot(morley, aes(y=Speed)) + 
+ggplot(morley, aes(x=Speed)) + 
   geom_histogram(col="black", fill="lightblue", bins=30)
 ```
 
