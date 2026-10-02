@@ -1,0 +1,52 @@
+---
+title: "Topic 1: Getting Started"
+format: live-html
+engine: knitr
+---
+
+{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}
+
+## What is R? 
+
+The [R Project for Statistical Computing](https://www.r-project.org) (or just R) is an open-source, community support software for conducting statistical analyses from graphics to simulation to data 
+cleaning and processing and more.  
+
+
+## What is RStudio? 
+
+[RStudio](https://posit.co/products/open-source/rstudio) is the most popular
+integrated development environment (IDE) for the R statistical software. Many find the
+user interface easier to work with as it allows for straightforward editing of 
+files, interaction with the R console and graphical interfaces for working with directory file structures, plots and many other tools. 
+
+## How do I use these? 
+
+It is very important to follow these steps 
+
+#### First, install the R Statistical package. 
+
+* You can dowload R from one of the Canadian repositories, like the [repository at the University of Waterloo](https://mirror.csclub.uwaterloo.ca/CRAN/). Make sure you download the correct software for your computing platform.  
+
+#### Second, install RStudio. 
+
+* Only after R is installed, then you can [download the installation of 
+R Studio for your computing platform.](https://posit.co/products/open-source/rstudio). Make sure you click the button to download RStudio.  
+
+## Other options  
+
+However, if you just to fool around with R, you have some other choices. 
+
+### Using Posit Cloud
+
+Posit (the company who created RStudio) allows you to run RStudio and R directly from their 
+cloud servers for free (with certain computing and collaboration alternatives). You will need 
+to set up an account, but you can work in RStudio without having to install anything on your home machine. 
+
+### But if this is all too overwhelming... 
+
+I have also decided to set up some webpages where you can interact with R all in your own browser, 
+writing and testing code without even having an account on Posit Cloud!  But once you feel comfortable with R from my tutorial pages, you may want to unleash the full power of R and RStudio 
+by installing them yourself. 
+
+
+

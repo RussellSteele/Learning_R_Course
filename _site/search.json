@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "topics/02-working-with-data-in-R.html",
+    "href": "topics/02-working-with-data-in-R.html",
+    "title": "Topic 2: Working with Data in R",
+    "section": "",
+    "text": "One of the great things about R for beginners is that R comes with a wide array of datasets already installed! Some of these datasets you have already seen before.\nNow, let’s look at the speed of light dataset that we used to motivate lots of different topics (quantitative graphical and numerical summaries). If we were working directly in R or RStudio, if we want to load and see this dataset, we can type the following two lines of code into the console (pressing return/enter after each).\nHowever, to test this out, just click Run Code below.\n\n\n\n\n\n\n\n\nNow try it yourself. First type in data(morley) press return and then type ’morley` into the box below and press click Run Code."
+  },
+  {
+    "objectID": "topics/02-working-with-data-in-R.html#using-datasets-that-are-included-with-r",
+    "href": "topics/02-working-with-data-in-R.html#using-datasets-that-are-included-with-r",
+    "title": "Topic 2: Working with Data in R",
+    "section": "",
+    "text": "One of the great things about R for beginners is that R comes with a wide array of datasets already installed! Some of these datasets you have already seen before.\nNow, let’s look at the speed of light dataset that we used to motivate lots of different topics (quantitative graphical and numerical summaries). If we were working directly in R or RStudio, if we want to load and see this dataset, we can type the following two lines of code into the console (pressing return/enter after each).\nHowever, to test this out, just click Run Code below.\n\n\n\n\n\n\n\n\nNow try it yourself. First type in data(morley) press return and then type ’morley` into the box below and press click Run Code."
+  },
+  {
+    "objectID": "topics/02-working-with-data-in-R.html#libraries",
+    "href": "topics/02-working-with-data-in-R.html#libraries",
+    "title": "Topic 2: Working with Data in R",
+    "section": "Libraries",
+    "text": "Libraries\nBecause the R universe is so vast, a lot of R resources are organized into libraries. Most libraries you would need to use for this course are included in R, but need to be “activated” or loaded in order to use them. The library you will find most useful to load in this course is the tidyverse library which includes many of the libraries many people find useful for working with data. To load the tidyverse library, you can just enter the following line of code:"
+  },
+  {
+    "objectID": "topics/02-working-with-data-in-R.html#graphical-summaries",
+    "href": "topics/02-working-with-data-in-R.html#graphical-summaries",
+    "title": "Topic 2: Working with Data in R",
+    "section": "Graphical summaries",
+    "text": "Graphical summaries\n\nHistograms\nIf we want to make the histogram from the morley data that we saw in lecture, then we can use the ggplot and geom_boxplot functions from the tidyverse suite of packages:\n\n\n\n\n\n\n\n\nThe ggplot2 package uses a grammar for graphics. The first function ggplot() takes two arguments: the data to be plotted (morley) and the aesthetics for the plot. In this case, we are choosing to put Speed on the x-axis. Switching to the y-axis is easy:\n\n\n\n\n\n\n\n\nThe second function, geom_histogram tells R which plot to make; in this case, it is a histogram. We then give few additional arguments which allow us to customize how the histogram looks.\n\n\n\n\n\n\n\n\nRecall that changing the width of the histogram bins can have a large effect on how we interpret the histogram. The easiest way to do this using geom_histogram is by using the bins= argument. For example, we can enter:\n\n\n\n\n\n\n\n\nor\n\n\n\n\n\n\n\n\nYou can keep changing the number of bins and see how your view of the plot changes.\n\n\nBoxplots\nWe also learned how to use boxplots to summarize quantitative data. We can do that by using the boxplot function\nIf we want to make the whiskers easier to see, we can add the following:\n\n\n\n\n\n\n\n\nTo see the boxplots for individual experiments, we can add two pieces of information: first, indicating that the experiments are grouped; second, we indicate that we want to include the experiment number on the x-axis."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "0X-Qualitative-Example.html",
+    "href": "0X-Qualitative-Example.html",
+    "title": "Lesson X: Qualitative Example",
+    "section": "",
+    "text": "Now, let’s look at the UCB Admissions dataset that we used to motivate lots of different topics (qualitative summaries and Simpson’s paradox). If we were working directly in R or RStudio, if we want to load and see this dataset, we can type the following two lines of code into the console (pressing return/enter after each).\nHowever, to test this out, just click Run Code below.\nNow try it yourself. First type in data(UCBAdmissions) press return and then type ’UCBAdmissions` into the box below and press click Run Code."
+  },
+  {
+    "objectID": "0X-Qualitative-Example.html#libraries",
+    "href": "0X-Qualitative-Example.html#libraries",
+    "title": "Lesson X: Qualitative Example",
+    "section": "Libraries",
+    "text": "Libraries\nBecause the R universe is so vast, a lot of R resources are organized into libraries. Most libraries you would need to use for this course are included in R, but need to be “activated” or loaded in order to use them. The library you will find most useful to load in this course is the tidyverse library which includes many of the libraries many people find useful for working with data. To load the tidyverse library, you can just enter the following line of code:"
+  },
+  {
+    "objectID": "0X-Qualitative-Example.html#converting-it-into-a-tibble",
+    "href": "0X-Qualitative-Example.html#converting-it-into-a-tibble",
+    "title": "Lesson X: Qualitative Example",
+    "section": "Converting it into a tibble",
+    "text": "Converting it into a tibble\nUsually we think of our data being organized into columns representing variables and rows representing individual observations. The UCBAdmisions data is not quite in this format, but we can use the tibble data structure from the tidyverse suite of packages to make it into something more useful.\n\n\n\n\n\n\n\n\nWe can see there are four columns: Admit, Gender, Dept and n, where n is the count of the number of applications in each group defined by a combination of the three other variables."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Learning_R_course",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "topics/01-getting-started.html",
+    "href": "topics/01-getting-started.html",
+    "title": "Topic 1: Getting Started",
+    "section": "",
+    "text": "The R Project for Statistical Computing (or just R) is an open-source, community support software for conducting statistical analyses from graphics to simulation to data cleaning and processing and more."
+  },
+  {
+    "objectID": "topics/01-getting-started.html#what-is-r",
+    "href": "topics/01-getting-started.html#what-is-r",
+    "title": "Topic 1: Getting Started",
+    "section": "",
+    "text": "The R Project for Statistical Computing (or just R) is an open-source, community support software for conducting statistical analyses from graphics to simulation to data cleaning and processing and more."
+  },
+  {
+    "objectID": "topics/01-getting-started.html#what-is-rstudio",
+    "href": "topics/01-getting-started.html#what-is-rstudio",
+    "title": "Topic 1: Getting Started",
+    "section": "What is RStudio?",
+    "text": "What is RStudio?\nRStudio is the most popular integrated development environment (IDE) for the R statistical software. Many find the user interface easier to work with as it allows for straightforward editing of files, interaction with the R console and graphical interfaces for working with directory file structures, plots and many other tools."
+  },
+  {
+    "objectID": "topics/01-getting-started.html#how-do-i-use-these",
+    "href": "topics/01-getting-started.html#how-do-i-use-these",
+    "title": "Topic 1: Getting Started",
+    "section": "How do I use these?",
+    "text": "How do I use these?\nIt is very important to follow these steps\n\nFirst, install the R Statistical package.\n\nYou can dowload R from one of the Canadian repositories, like the repository at the University of Waterloo. Make sure you download the correct software for your computing platform.\n\n\n\nSecond, install RStudio.\n\nOnly after R is installed, then you can download the installation of R Studio for your computing platform.. Make sure you click the button to download RStudio."
+  },
+  {
+    "objectID": "topics/01-getting-started.html#other-options",
+    "href": "topics/01-getting-started.html#other-options",
+    "title": "Topic 1: Getting Started",
+    "section": "Other options",
+    "text": "Other options\nHowever, if you just to fool around with R, you have some other choices.\n\nUsing Posit Cloud\nPosit (the company who created RStudio) allows you to run RStudio and R directly from their cloud servers for free (with certain computing and collaboration alternatives). You will need to set up an account, but you can work in RStudio without having to install anything on your home machine.\n\n\nBut if this is all too overwhelming…\nI have also decided to set up some webpages where you can interact with R all in your own browser, writing and testing code without even having an account on Posit Cloud! But once you feel comfortable with R from my tutorial pages, you may want to unleash the full power of R and RStudio by installing them yourself."
+  }
+]

@@ -1,0 +1,117 @@
+---
+title: "Topic 2: Working with Data in R"
+format: live-html
+engine: knitr
+---
+
+{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}
+
+## Using datasets that are included with R
+
+One of the great things about R for beginners is that R comes with a wide 
+array of datasets already installed!  Some of these datasets you 
+have already seen before. 
+
+Now, let's look at the speed of light dataset that we used to motivate 
+lots of different topics (quantitative graphical and numerical summaries). If we were
+working directly in R or RStudio, if we want to load and see this dataset, we can type the following two lines of code into the console (pressing return/enter after each). 
+
+However, to test this out, just click **Run Code** below. 
+
+
+```{webr}
+data(morley)
+morley
+```
+
+Now try it yourself. First type in `data(morley)` press return and then type
+'morley` into the box below and press click **Run Code**. 
+
+```{webr}
+```
+
+## Libraries
+
+Because the R universe is so vast, a lot of R resources are organized into **libraries**.  Most libraries you would need to use for this course are included in R, but need to be 
+"activated" or *loaded* in order to use them. The library you will find most useful to load in this course is the **`tidyverse`** library which includes many of the libraries many people find
+useful for working with data.  To load the `tidyverse` library, you can just enter
+the following line of code: 
+
+```{webr,warnings=FALSE}
+library(tidyverse)
+```
+
+
+## Graphical summaries
+
+### Histograms
+
+If we want to make the histogram from the `morley` data that we saw in lecture, 
+then we can use the `ggplot` and `geom_boxplot` functions from the `tidyverse` 
+suite of packages: 
+
+
+```{webr}
+ggplot(morley, aes(x=Speed)) + 
+  geom_histogram(col="black", fill="lightblue")
+```
+
+The `ggplot2` package uses a grammar for graphics. The first function `ggplot()` 
+takes two arguments: the data to be plotted (`morley`) and the *aesthetics* for the 
+plot. In this case, we are choosing to put `Speed` on the x-axis. Switching to the y-axis is easy: 
+
+```{webr}
+ggplot(morley, aes(y=Speed)) + 
+  geom_histogram(col="black", fill="lightblue")
+```
+
+The second function, `geom_histogram` tells R which plot to make; in this case, it is a histogram. 
+We then give few additional arguments which allow us to customize how the histogram looks. 
+
+
+```{webr}
+ggplot(morley, aes(x=Speed)) + 
+  geom_histogram(col="red", fill="darkred")
+```
+
+Recall that changing the width of the histogram bins can have a large effect on how we interpret the histogram. The easiest way to do this using `geom_histogram` is by using 
+the `bins=` argument. For example, we can enter: 
+
+
+```{webr}
+ggplot(morley, aes(y=Speed)) + 
+  geom_histogram(col="black", fill="lightblue", bins=10)
+```
+
+or 
+
+
+```{webr}
+ggplot(morley, aes(y=Speed)) + 
+  geom_histogram(col="black", fill="lightblue", bins=30)
+```
+
+You can keep changing the number of bins and see how your view of the plot changes. 
+
+### Boxplots
+
+We also learned how to use boxplots to summarize quantitative data. We can do that by 
+using the `boxplot` function
+
+
+If we want to make the whiskers easier to see, we can add the following: 
+
+```{webr}
+ggplot(morley, aes(y=Speed)) + stat_boxplot(geom = 'errorbar',width=0.25)+
+  geom_boxplot()
+```
+
+To see the boxplots for individual experiments, we can add two pieces of 
+information: first, indicating that the experiments are grouped; second, we indicate
+that we want to include the experiment number on the x-axis. 
+
+```{webr}
+ggplot(morley, aes(y=Speed,x=Expt,group=Expt))  +
+  geom_boxplot()
+```
+

@@ -1,0 +1,52 @@
+---
+title: "Lesson X: Qualitative Example"
+format: live-html
+engine: knitr
+---
+
+
+
+Now, let's look at the UCB Admissions dataset that we used to motivate 
+lots of different topics (qualitative summaries and Simpson's paradox). If we were
+working directly in R or RStudio, if we want to load and see this dataset, we can type the following two lines of code into the console (pressing return/enter after each). 
+
+However, to test this out, just click **Run Code** below. 
+
+
+```{webr}
+data(UCBAdmissions)
+UCBAdmissions
+```
+
+Now try it yourself. First type in `data(UCBAdmissions)` press return and then type
+'UCBAdmissions` into the box below and press click **Run Code**. 
+
+```{webr}
+```
+
+## Libraries
+
+Because the R universe is so vast, a lot of R resources are organized into **libraries**.  Most libraries you would need to use for this course are included in R, but need to be 
+"activated" or *loaded* in order to use them. The library you will find most useful to load in this course is the **`tidyverse`** library which includes many of the libraries many people find
+useful for working with data.  To load the `tidyverse` library, you can just enter
+the following line of code: 
+
+```{webr,warnings=FALSE}
+library(tidyverse)
+```
+
+
+## Converting it into a tibble
+
+Usually we think of our data being organized into columns representing variables and
+rows representing individual observations. The `UCBAdmisions` data is not quite in this 
+format, but we can use the `tibble` data structure from the `tidyverse` suite of packages 
+to make it into something more useful. 
+
+```{webr}
+admissions = as_tibble(UCBAdmissions)
+admissions
+```
+
+We can see there are four columns: `Admit`, `Gender`, `Dept` and `n`, where `n` is the 
+count of the number of applications in each group defined by a combination of the three other variables. 
