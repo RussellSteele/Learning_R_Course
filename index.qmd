@@ -9,13 +9,13 @@ local machines or using the Posit Cloud.
 
 ## Site Roadmap
 
-### 1. Getting started with R and RStudio
+### 1. [Getting started with R and RStudio](lessons/01-getting-started.qmd)
 
 This short lesson explains briefly the difference between R and RStudio and all 
 the ways in which they can be installed and used. You don't actually need 
 to install either to do the initial lessons, but for those who eventually want to work within RStudio, all the necessary links are there. 
 
-### 2. Working with Data in R 
+### 2. [Working with Data in R](lessons/02-working-with-data-in-R.qmd)
 
 This interactive lesson explains how one can load datasets and create basic 
 graphical and numerical summaries using the language of R using only a web browser. 
